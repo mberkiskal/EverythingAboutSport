@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Açık Alan Sporları</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.5;
+      }
+      .background1 {
+        background-image: url("fitbol.jpg");
+        height: 80%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.4;
+        position: absolute;
+        z-index: -1;
+      }
+      .background2 {
+        background-image: url("golf.webp");
+        height: 80%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.4;
+        position: absolute;
+        z-index: -1;
+        margin-top: 775px;
+      }
+      
+      .ilkaciklama {
+        text-align: center;
+      }
+
+      .headerlar {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        color: #2B9700;
+        background-color: #fff;
+        margin-top: 30px;
+      }
+
+      .panaroma {
+        align-items: center;
+        margin-left: 550px;
+        margin-top: 600px;
+        position: fixed;
+      }
+
+      #section-b {
+        padding: 2rem;
+      }
+      #section-b ul {
+        list-style: none;
+      }
+      #section-b li {
+        background-color: #fff;
+        color: #333;
+        margin-bottom: 1.4rem;
+      }
+      .col-content {
+        padding: 2.4rem;
+      }
+      .abc {
+        width: 500px;
+        height: auto;
+        float: left;
+        margin: 3rem;
+        border-radius: 4rem;
+      }
+      img {
+        border-radius: 4rem;
+      }
+      .box {
+        padding: 5rem;
+      }
+      .işkal {
+        display: inline-block;
+        background-color: #eaeaea;
+        border: 1px solid #666;
+        padding: 1rem 2rem;
+        color:#2B9700;
+        margin-bottom: 2rem;
+        transition: 0.3sn;
+        border-radius: 10px;
+        text-decoration: none;
+      }
+      .işkal:hover {
+        background-color: #333;
+        color: #2B9700;
+      }
+      .flip-card {
+        background-color: #2B9700;
+        width: 500px;
+        height: 500px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px;
+        border-radius: 4rem;
+      }
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+        border-radius: 4rem;
+        background-color: #2B9700;
+      }
+
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+        border-radius: 4rem;
+      }
+
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 4rem;
+      }
+
+      .flip-card-front {
+        background-color: #2B9700;
+        color: black;
+        border-radius: 4rem;
+      }
+
+      .flip-card-back {
+        background-color: #2B9700;
+        color: white;
+        transform: rotateY(180deg);
+        border-radius: 4rem;
+      }
+      .firsttexts {
+        font-size: larger;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      .cardstext {
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="background-color: #fff">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #2B9700"
+            href="futbol/ourwebsite.html"
+            >Futbol</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #2B9700"
+            href="golf/golfanasayfa.html"
+            >Golf</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color:#2B9700"
+            href="ATLETİZM/ourwebsite.html"
+            >Atletizm</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #2B9700"
+            href="#"
+            >Okçuluk</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #2B9700"
+            href="tenis/ourwebsite.html"
+            >Tenis</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #2B9700"
+            href="#"
+            >Bisiklet</a
+          >
+        </li>
+        
+      </ul>
+    </div>
+
+    <div class="background1"></div>
+    <div class="background2"></div>
+  
+
+    <header>
+      <div class="ilkaciklama">
+        <h1 class="headerlar">Açık Alan Sporları</h1>
+        <br />
+        <br />
+        <div class="firsttexts">
+          <p>
+            Açık hava sporu yapmak, güneşin tadını çıkarmak ve rahatlamak için çevreden keyif almanın harika bir yoludur. 
+          </p>
+          <p>
+            Havalar güzel olduğunda ve güneş parladığında dışarı çıkıp açık hava sporları ve aktivitelerinin tadını çıkarma 
+            fikri aklımıza gelir. Spor salonuna gitmek vücudunuz için iyi olsa da, taze hava soluyarak egzersiz yapmak da çok
+            fayda sağlar. Bu yazımızda size keyif alabileceğiniz bazı açık hava sporları ve onlardan nasıl 
+            yararlanabileceğiniz hakkında bilgi vereceğiz.
+          </p>
+          <p>
+            Açık havada egzersiz yapmanın içinizde oluşturduğu özgürlük hissi bir spor salonununkiyle karşılaştırılamaz,
+            üstelik bir de egzersiz alanınız doğayla bağlantı kurabileceğiniz bir yerse; bu durumu daha fazla hissedersiniz.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main id="section-b">
+      <ul>
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="agaç.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Futbol!</h1>
+                <div class="cardstext">
+                  <p>
+                    Futbol, on birer oyuncudan oluşan iki takım arasında, kendine özgü küresel bir topla oynanan takım sporudur.
+                    21. yüzyıl itibarıyla 200'ün üzerinde ülkede 250 milyonu aşkın oyuncu tarafından oynanmakta olup dünyadaki
+                    en popüler spordur.
+                  </p>
+                  <p>
+                    Her iki kısa kenarında birer kalenin yer aldığı, dikdörtgen şeklindeki bir sahada oynanır.
+                    Oyuncuların amacı, temelde ayak olmak üzere, eller ve kollar hariç vücudun kısımlarını kullanarak
+                    topu karşı takımın kalesine sokarak gol atmaktır.
+                  </p>
+                  <p>Peki bu sporun incelikleri nelerdir?</p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="futbol/ourwebsite.html" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="agaç.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Golf!</h1>
+                <div class="cardstext">
+                  <p>
+                    Golf, doğada özel olarak yapılmış bir sahada golf sopaları ve küçük sert bir topla oynanan oyundur. Oyunun amacı, sahanın belirlenmiş 18 parkurunu (çukurunu) golf topuna en az vuruş yaparak tamamlamaktır.
+                  </p>
+                  <p>Peki bu sporun incelikleri nelerdir?</p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="golf/golfanasayfa.html" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="agaç.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Atletizm!</h1>
+                <div class="cardstext">
+                  <p>
+                    Atletizm, bir pist veya alanda yapılan, dünyanın en eski sporlarından biridir. Bu oyunlarda atletler koşu, yürüyüş, 
+                    atlama ve atma yeteneklerini gösterirler. Bu tür etkinlikler, çağlar boyunca tüm dünyada yaygın ilgi görmüştür.
+                  </p>
+                  <p>
+                  Peki bu sporun incelikleri nelerdir?
+                  </p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="#" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="agaç.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Okçuluk!</h1>
+                <div class="cardstext">
+                  <p>
+                    Okçuluk, kökeni insanoğlunun avcılık günlerine dayanan, oku bir yay aracılığıyla hedefe göndermeyi amaçlayan spor dalı.
+                    Eski zamanlarda avlanmak, saldırmak vb. amaçlarla kullanılıyordu. Bu yay ve oklar basit bir yapıya sahipti. 
+                  </p>
+                  <p>
+                    Okçuluk ilk kez 1904 Yaz Olimpiyatları'nda olimpik programa alınmış, 1972'den beri aralıksız olarak programlarda yer almaktadır.
+                    <p> Peki bu sporun
+                    incelikleri nelerdir?</p>
+                  </p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="#" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="agaç.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Tenis!</h1>
+                <div class="cardstext">
+                  <p>
+                    Tenis, raket ve topla iki kişi arasında ya da ikişer kişilik iki takım arasında oynanan olimpik bir spor.
+                  </p>
+                  <p>
+                    Oyuncular raketleri ile içi boş lastik bir topu ağ (net) üzerinden rakibinin sahasına (korta) atmaya çalışırlar. Kurallar dahilinde en çok puanı alan oyuncu kazanır.
+                  </p>
+                  <p>Peki bu sporun incelikleri nelerdir?</p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="#" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="agaç.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Bisiklet!</h1>
+                <div class="cardstext">
+                  <p>
+                    Bisiklet, iki tekerlekli bisikletin gelişmesi sonucunda ortaya çıkmış bir spor dalıdır. 
+                    Eğlence, ulaşım ve yarışma amacıyla bisiklet sürmenin giderek yaygınlaşması bisiklet sporunu daha da geliştirmiştir. 
+                  </p>
+                  <p>
+                    Bisiklet kısa yolculuklarda kullanışlı ve ekonomik bir araçtır.
+                    Bisikletle yapılan günlük geziler ve tatil turları da çok eğlencelidir. 
+                    Birçok ülkede turlarla ilgili bilgi sağlayan ve toplu bisiklet gezileri düzenleyen bisiklet kulüpleri vardır.
+                  </p>
+                  <p>Peki bu sporun incelikleri nelerdir?</p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="#" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        
+             
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <footer>
+        <button  class="btn btn-light btn-lg btn-block" onclick="myFunction()" >  <a style="text-decoration: none;" href="acik_alan_form.html"> Teste Geç</a></button>
+    </footer>
+
+    <canvas class="panaroma" id="canvas" width="800" height="200"></canvas>
+
+    <script src="acik_alan_form.html" type="text/Javascript"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="formkısmı2.css" />
+  </head>
+  <body>
+    <form action="action_page.php">
+      <div class="container">
+        <h1>Kayıt Formu</h1>
+        <p>Hesabınızı yaratmak için aşağıdaki bilgileri doldurunuz.</p>
+        <hr />
+
+        <label for="email"><b>Ad</b></label>
+        <input
+          type="text"
+          placeholder="Adınızı Giriniz"
+          name="email"
+          required
+        />
+
+        <label for="email"><b>Soyad</b></label>
+        <input
+          type="text"
+          placeholder="Soyadınızı Giriniz"
+          name="email"
+          required
+        />
+
+        <label for="email"><b>Yaş</b></label>
+        <input
+          type="text"
+          placeholder="Yaşınızı Giriniz"
+          name="text"
+          required
+        />
+
+        <label for="email"><b>Yaşadığınız Şehir</b></label>
+        <input
+          type="text"
+          placeholder="Yaşadığınız Şehri Giriniz"
+          name="text"
+        />
+
+        <label for="email"><b>Email</b></label>
+        <input
+          type="text"
+          placeholder="E-mail Adresinizi Giriniz"
+          name="email"
+          required
+        />
+
+        <label for="email"><b>Kullanıcı Adı</b></label>
+        <input
+          type="text"
+          placeholder="Kullanıcı Adınızı Giriniz"
+          name="email"
+          required
+        />
+
+        <label for="psw"><b>Şifre</b></label>
+        <input
+          type="password"
+          placeholder="Şifrenizi Giriniz"
+          name="psw"
+          required
+        />
+
+        <label for="psw-repeat"><b>Şifrenizi Tekrar Giriniz</b></label>
+        <input
+          type="password"
+          placeholder="Şifrenizi Tekrar Giriniz"
+          name="psw-repeat"
+          required
+        />
+
+        <label>
+          <input
+            type="checkbox"
+            checked="checked"
+            name="remember"
+            style="margin-bottom: 15px"
+          />
+          Beni Hatırla
+        </label>
+
+        <p>
+          Kullanım koşullarını okuyunuz ve onaylayınız.
+          <a href="indir.jpg" style="color: dodgerblue">Kullanım Koşulları</a>.
+        </p>
+
+        <div class="clearfix">
+          <button type="button" class="cancelbtn">Ana Sayfaya Dön</button>
+          <button type="submit" class="signupbtn">Kayıt Ol</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

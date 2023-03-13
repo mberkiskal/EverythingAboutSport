@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="formkısmı1.css" />
+  </head>
+  <body>
+    <form action="action_page.php" method="post">
+      <div class="imgcontainer">
+        <img src="img_311846.png" alt="Avatar" class="avatar" />
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Kullanıcı Adı</b></label>
+        <input
+          type="text"
+          placeholder="Kullanıcı Adınızı Giriniz"
+          name="uname"
+          required
+        />
+
+        <label for="psw"><b>Şifre</b></label>
+        <input
+          type="password"
+          placeholder="Şifrenizi Giriniz"
+          name="psw"
+          required
+        />
+
+        <button type="submit">Giriş Yap</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" /> Beni
+          Hatırla
+        </label>
+      </div>
+
+      <div class="container" style="background-color: #f1f1f1">
+        <button type="button" class="cancelbtn"> <a href="formkısmı2.html" style="color:white">Hesap Oluştur</a></button>
+             
+    </form>
+  </body>
+</html>

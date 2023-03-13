@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Su Sporları</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.5;
+      }
+      .background1 {
+        background-image: url("deniz.jpg");
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.4;
+        position: absolute;
+        z-index: -1;
+      }
+      .background2 {
+        background-image: url("deniz.jpg");
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.4;
+        position: absolute;
+        z-index: -1;
+        margin-top: 969px;
+      }
+      .background3 {
+        background-image: url("deniz.jpg");
+        height: 30%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.4;
+        position: absolute;
+        z-index: -1;
+        margin-top: 1938px;
+      }
+      .ilkaciklama {
+        text-align: center;
+      }
+
+      .headerlar {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        color: #0d63f8;
+        background-color: #fff;
+        margin-top: 30px;
+      }
+
+      .panaroma {
+        align-items: center;
+        margin-left: 550px;
+        margin-top: 600px;
+        position: fixed;
+      }
+
+      #section-b {
+        padding: 2rem;
+      }
+      #section-b ul {
+        list-style: none;
+      }
+      #section-b li {
+        background-color: #fff;
+        color: #333;
+        margin-bottom: 1.4rem;
+      }
+      .col-content {
+        padding: 2.4rem;
+      }
+      .abc {
+        width: 500px;
+        height: auto;
+        float: left;
+        margin: 3rem;
+        border-radius: 4rem;
+      }
+      img {
+        border-radius: 4rem;
+      }
+      .box {
+        padding: 5rem;
+      }
+      .işkal {
+        display: inline-block;
+        background-color: #eaeaea;
+        border: 1px solid #666;
+        padding: 1rem 2rem;
+        color: #0d63f8;
+        margin-bottom: 2rem;
+        transition: 0.3sn;
+        border-radius: 10px;
+        text-decoration: none;
+      }
+      .işkal:hover {
+        background-color: #333;
+        color: #0d63f8;
+      }
+      .flip-card {
+        background-color: #0d63f8;
+        width: 500px;
+        height: 500px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px;
+        border-radius: 4rem;
+      }
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+        border-radius: 4rem;
+        background-color: #0d63f8;
+      }
+
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+        border-radius: 4rem;
+      }
+
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 4rem;
+      }
+
+      .flip-card-front {
+        background-color: #0d63f8;
+        color: black;
+        border-radius: 4rem;
+      }
+
+      .flip-card-back {
+        background-color: #0d63f8;
+        color: white;
+        transform: rotateY(180deg);
+        border-radius: 4rem;
+      }
+      .firsttexts {
+        font-size: larger;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      .cardstext {
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="background-color: #fff">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #0d63f8"
+            href="../Sporlar/Yüzme.html"
+            >Yüzme</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #0d63f8"
+            href="senkronikYüzme/ourwebsite.html"
+            >Senkronize Yüzme</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #0d63f8"
+            href="suTopu/ourwebsite.html"
+            >Su Topu</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #0d63f8"
+            href="atlama/ourwebsite.html"
+            >Atlama</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #0d63f8"
+            href="tüplü dalış/tupludalısanasayfa.html"
+            >Tüplü Dalış</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #0d63f8"
+            href="şnorkelliDalış/ourwebsite.html"
+            >Şnorkelli Dalış</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #0d63f8"
+            href="balıkcılık/balıkcılıkanasayfa.html"
+            >Balıkçılık</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #0d63f8"
+            href="../Sporlar/Kano.html"
+            >Kano</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #0d63f8"
+            href="yelken/yelkenanasayfa.html"
+            >Yelken</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="background1"></div>
+    <div class="background2"></div>
+    <div class="background3"></div>
+
+    <header>
+      <div class="ilkaciklama">
+        <h1 class="headerlar">Su Sporları</h1>
+        <br />
+        <br />
+        <div class="firsttexts">
+          <p>
+            İnsanı su kadar rahatlatan az şey vardır sanırım. Spor yapanlar çok
+            iyi bilir ki bir kere alıştın mı spor da aynı şekilde insanı
+            inanılmaz rahatlarız. Su sporlarının ne kadar rahatlatacağını siz
+            düşünün artık! Yoğun stresli bir iş günü sonrası bile sporla
+            kendinizi yenilenmiş hissedersiniz… Bu sebeple bu hafta size bu
+            güzel su sporlarını (belki hiç duymadığınız su sporları isimleri,
+            belkide adını bilip ne olduğunu bilmediklerinizi) anlatacağım.
+          </p>
+          <p>
+            Su sporları, su üstünde, altında veya içinde gerçekleştirilen
+            sporların genel adı. Takım hâlinde veya bireysel olarak icra
+            edilebilen türleri vardır.
+          </p>
+          <p>
+            Su üstünde, su içinde ve sualtında gerçekleştirilebilir olarak 3
+            anadala ayrılır.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main id="section-b">
+      <ul>
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="denizijpg.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Yüzme!</h1>
+                <div class="cardstext">
+                  <p>
+                    Yüzme kuşkusuz en sağlıklı sporlardan biri. Yüzme ile
+                    uğraşan kişiler vücut, boyun ağrısı, sırt ağrısı nedir
+                    bilmezmiş.
+                  </p>
+                  <p>
+                    Yüzmede bir çok stil çeşidi bulunmaktadır. Bunlar; serbest
+                    yüzme, kelebek, kurbağalama ve sırt üstüdür.
+                  </p>
+                  <p>
+                    Üç tarfı denizlerle çevrili ülkemizde yüzme bilenlerin
+                    sayısı bir hayli yüksektir. Fakat profesyonel olarak yüzücü
+                    olmak için neler gerekir?
+                  </p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="../Sporlar/Yüzme.html" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="denizijpg.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Senkronize Yüzme!</h1>
+                <div class="cardstext">
+                  <p>
+                    Senkronize yüzme veya diğer adıyla su balesi, yüzme ile dans
+                    ve jimnastiğin harmanlanarak yapıldığı bir spordur. 1800'lü
+                    yılların sonunda ortaya çıkmış olmasına rağmen uzun yıllar
+                    sirk ve panayırlarda gösteri şeklinde sunuldu.
+                  </p>
+                  <p>
+                    1952 yılında Uluslararası Yüzme Federasyonu tarafından
+                    tanındı. 1973'te ilk kez Senkronize Yüzme Dünya Şampiyonası
+                    yapıldı. 1984'te Olimpiyat programına dahil edildi.
+                  </p>
+                  <p>Peki bu sporun incelikleri nelerdir?</p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="senkronikYüzme/ourwebsite.html" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="denizijpg.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Su Topu!</h1>
+                <div class="cardstext">
+                  <p>
+                    Sutopu, 6 alan oyuncusu biri kaleci, kaleci dahil 7'si oyun
+                    içinde, yedeklerle beraber toplam 14 kişiden oluşan2 takımla
+                    2 yarı ve 8 dakika 4 periyot süresince en fazla 25x33 metre
+                    boyutundaki havuzda yüzerek ve topu kaleye sokmaya çalışarak
+                    suda oynanan bir takım oyundur.
+                  </p>
+                  <p>
+                  Peki bu sporun incelikleri nelerdir?
+                  </p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="suTopu/ourwebsite.html" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="denizijpg.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Atlama!</h1>
+                <div class="cardstext">
+                  <p>
+                    Atlama, belirli bir yükseklikten atlayıp, havada estetik
+                    hareketler yaptıktan sonra suya dimdik girmeye dayanan spor
+                    dalı. Genellikle balıklama yapılan atlayış sırasında ayrıca
+                    çeşitli jimnastik ve akrobasi hareketleri gerçekleştirilir.
+                  </p>
+                  <p>
+                    Gittiğimiz havuzlarda veya denizlerdeki iskelelerde hepimiz
+                    mutlaka bir kere suya atlamışızdır.
+                    <p> Peki bu sporun
+                    incelikleri nelerdir?</p>
+                  </p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="atlama/ourwebsite.html" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="denizijpg.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Tüplü Dalış!</h1>
+                <div class="cardstext">
+                  <p>
+                    Tüplü dalış, bilinen en temel tanımıyla, bir su altı
+                    aktivitesidir ve diğer dalış türlerinden ayrılan en farklı
+                    yanı, su altında nefes alabilmenizi sağlayan bağımsız bir
+                    hava kaynağı (dalış tüpü) ile yapılıyor olmasıdır.
+                  </p>
+                  <p>
+                    Bu sayede, indiğiniz derinliğe bağlı olarak, su altındaki
+                    hava ihtiyacınızı belirli bir süre karşılarsınız ve yüzeye
+                    çıkmak zorunda kalmadan su altını keşfetme fırsatınız olur.
+                  </p>
+                  <p>Peki bu sporun incelikleri nelerdir?</p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="tüplü dalış/tupludalısanasayfa.html" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="denizijpg.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Serbest Dalış!</h1>
+                <div class="cardstext">
+                  <p>
+                    İnsanın inanılması güç derinliklere nefesini tutarak daldığı
+                    serbest dalış sporunun tarihi çok eskilere dayanır.
+                  </p>
+                  <p>
+                    Sualtı avcılığı ile insanların geçimini sürdürmeleri
+                    amacıyla başlayan bu spor sualtı avcılığının çok ötesine
+                    geçip günümüzde limitlerini keşfetmek
+                    serbest-dalis-01isteyen bir grup serbest dalıcı tarafından
+                    ayrı bir boyut kazanmıştır.
+                  </p>
+                  <p>Peki bu sporun incelikleri nelerdir?</p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="şnorkelliDalış/ourwebsite.html" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="denizijpg.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Balıkçılık!</h1>
+                <div class="cardstext">
+                  <p>
+                    Balıkçılık, en dar anlamıyla denizlerde, göllerde ve
+                    akarsularda balıkların çeşitli yöntemlerle avlanmasıdır. Ama
+                    balıkçılık yalnızca balık avlanmasıyla sınırlı değildir.
+                    Midye, karides, ıstakoz, pavurya, istiridye ve ahtapotun,
+                    hatta balina gibi deniz memelilerinin avlanması da
+                    balıkçılık kapsamına girer.
+                  </p>
+                  <p>
+                    Spor ve eğlence amacıyla yapılan balıkçılığa amatör
+                    balıkçılık denir. Besin gereksinimi karşılamak için yapılan
+                    balıkçılık ise ticari balıkçılık olarak adlandırılır.
+                  </p>
+                  <p>
+                    Ülkemizin 3 tarafı denizlerle çevrilidir ve balık tüketimi
+                    oldukça fazladır. Peki bu sporun incelikleri nelerdir?
+                  </p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="balıkcılık/balıkcılıkanasayfa.html" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="denizijpg.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Kano!</h1>
+                <div class="cardstext">
+                  <p>
+                    Bir tekne türü olan kano, düz tipli basit bir su aracıdır.
+                    İsmini Karayiplilerin kent olarak kullandığı kelimeden
+                    almıştır ve zamanla dilimize kano olarak geçmiştir. Kanoyu
+                    ilk kullananlar Kızılderililerdir.
+                  </p>
+                  <p>
+                    Fırtınalı havalar hariç yıl boyunca yapılabilen kano, su
+                    sporu olduğu için gerekli önlemleri almak oldukça önemlidir.
+                    Sporcuların mutlaka koruyucu yelek giymeleri gerekir. Kanoyu
+                    hareket ettirmek ya da hızlandırmak için bir kürek
+                    kullanılır. Bu küreğin ismi ise pagadır.
+                  </p>
+                  <p>Peki bu sporun incelikleri nelerdir?</p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="../Sporlar/Kano.html" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="denizijpg.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Yelken!</h1>
+                <div class="cardstext">
+                  <p>
+                    Mısırlılar tarafından M.Ö. 2400’lü yıllarda icat edilen
+                    yelken, ağırlıklı olarak ulaştırma ve taşımacılık
+                    alanlarında kullanıldı. Günümüzde kimileri için onunla dünya
+                    turu yapmak gibi tutkular oluşturan bu taşıt, kimileri için
+                    ise adrenalin dolu bir spor haline geldi.
+                  </p>
+                  <p>
+                    Yelken basitçe, rüzgar kuvvetini kullanarak hareket ettiren
+                    yapı olarak tanımlanabilir. Rüzgarın gücünü sahip olduğu
+                    kumaşla kullanır. Yelkenin kumaşı, ne çok sert ne de çok
+                    yumuşaktır. Sağlam ve biraz esnek olmalıdır.
+                  </p>
+                  <p>Peki bu sporun incelikleri nelerdir?</p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="yelken/yelkenanasayfa.html" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <footer> 
+      <button  class="btn btn-light btn-lg btn-block" onclick="myFunction()" >  <a style="text-decoration: none;" href="su_sporları_form.html"> Teste Geç</a></button>
+    </footer>
+    
+
+    
+
+    <script src="su_sporları_form.js" type="text/Javascript"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

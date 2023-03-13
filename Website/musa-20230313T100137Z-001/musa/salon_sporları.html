@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salon Sporları</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.5;
+      }
+      .background1 {
+        background-image: url("salon.jpg");
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.4;
+        position: absolute;
+        z-index: -1;
+      }
+      .background2 {
+        background-image: url("salon2.jpg");
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.4;
+        position: absolute;
+        z-index: -1;
+        margin-top: 969px;
+      }
+      .background3 {
+        background-image: url("salon.jpeg");
+        height: 20%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.4;
+        position: absolute;
+        z-index: -1;
+        margin-top: 1938px;
+      }
+      .ilkaciklama {
+        text-align: center;
+      }
+
+      .headerlar {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        color: #f88300;;
+        background-color: #fff;
+        margin-top: 30px;
+      }
+
+      .panaroma {
+        align-items: center;
+        margin-left: 550px;
+        margin-top: 600px;
+        position: fixed;
+      }
+
+      #section-b {
+        padding: 2rem;
+      }
+      #section-b ul {
+        list-style: none;
+      }
+      #section-b li {
+        background-color: #fff;
+        color: #333;
+        margin-bottom: 1.4rem;
+      }
+      .col-content {
+        padding: 2.4rem;
+      }
+      .abc {
+        width: 500px;
+        height: auto;
+        float: left;
+        margin: 3rem;
+        border-radius: 4rem;
+      }
+      img {
+        border-radius: 4rem;
+      }
+      .box {
+        padding: 5rem;
+      }
+      .işkal {
+        display: inline-block;
+        background-color: #eaeaea;
+        border: 1px solid #666;
+        padding: 1rem 2rem;
+        color: #f88300;
+        margin-bottom: 2rem;
+        transition: 0.3sn;
+        border-radius: 10px;
+        text-decoration: none;
+      }
+      .işkal:hover {
+        background-color: #333;
+        color: #f88300;;
+      }
+      .flip-card {
+        background-color: #f88300;
+        width: 500px;
+        height: 500px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px;
+        border-radius: 4rem;
+      }
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+        border-radius: 4rem;
+        background-color: #f88300;
+      }
+
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+        border-radius: 4rem;
+      }
+
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 4rem;
+      }
+
+      .flip-card-front {
+        background-color:#f88300;
+        color: black;
+        border-radius: 4rem;
+      }
+
+      .flip-card-back {
+        background-color: #f88300;
+        color: white;
+        transform: rotateY(180deg);
+        border-radius: 4rem;
+      }
+      .firsttexts {
+        font-size: larger;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      .cardstext {
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="background-color: #fff">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #f88300;"
+            href="basketbol/basketbol.html"
+            >Basketbol</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #f88300;"
+            href="voleybol/voleybolanasayfa.html"
+            > Voleybol</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #f88300;"
+            href="futsal/futsalanasayfa.html"
+            >Futsal</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #f88300;"
+            href="../Sporlar/Hentbol.html"
+            >Hentbol</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #f88300;"
+            href="../Sporlar/Masa Tenisi.html"
+            >Masa Tenisi</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #f88300;"
+            href="boks/boksanasayfa.html"
+            >Boks</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #f88300;"
+            href="../Sporlar/Güreş.html"
+            >Güreş</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #f88300;"
+            href="judo/ourwebsite.html"
+            >Judo</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            style="color: #f88300;"
+            href="#"
+            >Bilardo</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="background1"></div>
+    <div class="background2"></div>
+    <div class="background3"></div>
+
+    <header>
+      <div class="ilkaciklama">
+        <h1 class="headerlar">Salon Sporları</h1>
+        <br />
+        <br />
+        <div class="firsttexts">
+          <p>
+            Salon sporları için hazırlanan mekânlar; önceden planlanan amaçlara yönelik bireysel veya takım olarak düzenli
+            ve kurallı fiziksel aktiviteler ile düzenli spor yapmaya ve sağlıklı yaşamaya katkı sunan, kişilerin fiziksel
+            becerilerini sergilediği ve geliştirdiği alanlardır. Spor, büyüme çağındaki çocuklar için bedensel sağlık ve 
+            fiziksel gelişme yönünden önemli olduğu kadar, iyi bir kişilik oluşumu ve ruh sağlığı bakımından da yararlı ve
+            gereklidir. 
+          </p>
+          <p>
+            Bir eğitmen gözetiminde spor yapan, dengeli beslenen çocukların ve gençlerin
+            gelişim süreçleri sağlıklı ve başarılıdır. 
+          </p>
+          <p>
+            Salon sporları ile insanlarn kendilerini tanıması, ihtiyacı olan
+            becerilerin kazanımı ve bireysel özgürleşme sürecinde edinilen fiziksel, zihinsel ve duygusal tüm kazanımları
+            düzenlemesi ve transfer edtmesi amaçlanmaktadır.
+          </p>
+          
+        </div>
+      </div>
+    </header>
+
+    <main id="section-b">
+      <ul>
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="baskettt.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Basketbol!</h1>
+                <div class="cardstext">
+                  <p>
+                    Basketbol ya da Sepettopu, elle idare edilen bir topla oynanan popüler bir takım oyunu ve spor dalı.
+                    Profesyonel basketbolda beşer kişilik iki takım, yerden yüksekliği Avrupa standartlarına göre 3,05 metre olan ve pota adı verilen, 
+                    yere paralel konumdaki bir çemberden topu geçirerek, rakibinden daha fazla sayı yapmak suretiyle, on ikişer, onar veya sekizer
+                    dakikalık dört periyottan oluşan maçı kazanmaya çalışır.
+                  </p>
+                 
+                  <p>Peki bu sporun incelikleri nelerdir?</p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="basketbol/basketbol.html" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="baskettt.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Voleybol!</h1>
+                <div class="cardstext">
+                  <p>
+                    Voleybol, file ile ikiye bölünmüş bir oyun alanı üzerinde altı kişilik iki takım ile oynanan bir spor dalıdır.
+                  </p>
+                  <p>
+                    Oyunun amacı, topu filenin üzerinden göndererek rakip takımın oyun alanına topun değmesini sağlamak ve rakip 
+                    takımın aynı amaca ulaşmasını ise önlemektir. Takımlar topu rakip alana gönderirken topa en az bir kere kendi
+                     sahaları içinde vurmalıdır. Takımlar topa en fazla üç kere değebilir, blok teması ile dört kere değme hakları vardır.
+                  </p>
+                  <p>Peki bu sporun incelikleri nelerdir?</p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="voleybol/voleybolanasayfa.html" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="baskettt.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Futsal!</h1>
+                <div class="cardstext">
+                  <p>
+                   Kapalı alanda oynanan; hentbol, basketbol ve futbolun karışımı olarak adlandırılabilecek bir spor olan futsal, salon futbolu olarak da bilinen bir spor.
+                  </p>
+                  <P>Futsal oynanış bakımından futbol, hentbol ve basketbolu andıran bir spor. Yalnızca kalecilerin ellerini kullanabildiği sporda oyuncu değiştirme ile
+                     ilgili herhangi bir sınırlama bulunmaktadır. Takımlar, sınırsız sayıda oyuncu değişikliği yapabiliyor. Oyundan çıkan oyuncu, yeniden oyuna girebiliyor. </P>
+                  <p>
+                  Peki bu sporun incelikleri nelerdir?
+                  </p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="futsal/futsalanasayfa.html" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="baskettt.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Hentbol!</h1>
+                <div class="cardstext">
+                  <p>
+                    Hentbol, altısı saha içinde, biri kalede olmak üzere yedi oyuncuyla oynanan bir takım sporudur.
+                  </p>
+                  <p>
+                    Oyun süresi otuz dakikalık iki devreden oluşur. İlk yıllarında futbol stadyumlarında 11 kişilik
+                     takımlar halinde çim üzerinde oynanan hentbol, 1950'lerden sonra yaygın bir salon sporu haline dönüşmüştür.
+                    <p> Peki bu sporun
+                    incelikleri nelerdir?</p>
+                  </p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="../Sporlar/Hentbol.html" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="baskettt.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Masa Tenisi!</h1>
+                <div class="cardstext">
+                  <p>
+                    Masa tenisi (pinpon), iki veya dört oyuncunun birbirlerine topu karşılıklı olarak attığı ortasında ağ bulunan masanın üstünde oynanan bir oyundur.
+                  </p>
+                  <p>
+                    Bu sporun salon tenisi adıyla bilinen en eski şekli 1880'li yıllarda Hindistan ve Güney Afrika'daki İngiliz ordusu tarafından oynanırdı.
+                     Puro kutularının kapaklarını raket, yuvarlatılmış şarap şişesi mantarlarını da top olarak kullanırlardı. File olarak da kitapları kullanıyorlardı.
+                  </p>
+                  <p>Peki bu sporun incelikleri nelerdir?</p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="#" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="baskettt.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Boks!</h1>
+                <div class="cardstext">
+                  <p>
+                    Boks, iki kişinin hakem gözetiminde karşılıklı yumruklaştıkları ve birbirlerini nakavtla ya da puanla yenmeye çalıştıkları spor müsabakasıdır.
+                  </p>
+                  <p>
+                    Boks karşılaşmaları ringde yapılır. Ring, üç veya dört sıra halatla çevrili ve yerden yüksekliği en az 91 cm en fazla 122 cm olan kare biçiminde
+                     bir alandır. Ringte kırmızı, mavi ve tarafsız beyaz köşeler vardır. Sporcular ait oldukları köşeden,
+                      hakem ve doktor ise jüri masasına yakın olan beyaz köşeden ringe çıkar.
+                  </p>
+                  <p>Peki bu sporun incelikleri nelerdir?</p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="boks/boksanasayfa.html" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="baskettt.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Güreş!</h1>
+                <div class="cardstext">
+                  <p>
+                    Güreş, uygulayıcılarının birbirlerine vurmaksızın rakiplerini yenmeye çalıştıkları bir spor türü.
+                     Güreş tarihteki en eski sporlardan biridir ve zamanla farklı stil ve formları geliştirilmiştir.
+                      Güreş genellikle dövüş sanatları arasında değerlendirilir.
+                  </p>
+                  <p> Peki bu sporun incelikleri nelerdir?
+                  </p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="../Sporlar/Güreş.html" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="baskettt.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Judo!</h1>
+                <div class="cardstext">
+                  <p>
+                    Japonya kaynaklı bir dövüş sanatı ve bir spor dalıdır. Judo, Jujutsu dan geliştirilmiş ve temel ilkeleri 
+                    1882'de Dr. Jigoro Kano tarafından tanımlanmıştır. Judo Japon modern dövüş sanatlarının ilk örneği olmuştur.
+                     Gendai Budo (Modern Dövüş Sanatları) geleneksel Japon dövüş sanatları okullarının (Koryu) ilkelerinden geliştirilmiştir.
+                  </p>
+                  <p>Peki bu sporun incelikleri nelerdir?</p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="#" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="abc">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="baskettt.jpg"
+                  alt="Avatar"
+                  style="width: 500px; height: 500px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Bilardo!</h1>
+                <div class="cardstext">
+                  <p>
+                    Son yıllarda spor dalları içinde önemli bir yer kaplamaya başlamıştır. Şu anda, Avrupa'nın en çok ilgilenilen 5 sporu arasındadır. 
+                  </p>
+                  <p>
+                    Bilardo oynamak için gereken aletler; bilardo masası, isteka (bilardo sopası), bilardo topları, tebeşir (istekanın topa daha ölçülü 
+                    vurmasını ve gereksiz yere kaymamasını sağlar, özellikle falsolu vuruşlarda çok işe yarar), köprü(isteğe göre) (zor uzanılan toplara 
+                    yetişmeyi sağlar) gerekir.
+                  </p>
+                  <p>Peki bu sporun incelikleri nelerdir?</p>
+                  <h3>Sorunun cevabı için:</h3>
+                </div>
+                <a href="#" class="işkal">Daha Fazla Bilgi Al</a>
+              </div>
+            </div>
+          </div>
+        </li>
+       
+      </ul>
+    </main>
+
+    <footer>
+      <button  class="btn btn-light btn-lg btn-block" onclick="myFunction()" >  <a style="text-decoration: none;" href="salon_sporları_fomrs.html"> Teste Geç</a></button>
+  </footer>
+    
+
+  <script src="salon_sporları_fomrs.html" type="text/Javascript"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
